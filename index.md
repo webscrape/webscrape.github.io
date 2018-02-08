@@ -1,12 +1,10 @@
-## Welcome to GitHub Pages
+## Welcome to webscrape
 
-You can use the [editor on GitHub](https://github.com/webscrape/webscrape.github.io/edit/master/index.md) to maintain and preview the content for your website in Markdown files.
+I will teach yo how to scrape web properly and efficiently. The language we will be using will be Python.
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+### Web Scraping
 
-### Markdown
-
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+Web Scraping is the process of extracting data from the web automatically using some tools or code.
 
 ```markdown
 Syntax highlighted code block
