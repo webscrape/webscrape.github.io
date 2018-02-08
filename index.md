@@ -53,3 +53,6 @@ class ExampleSpider(scrapy.Spider):
 * [Coding for Entrepreneurs](https://www.youtube.com/watch?v=3xQTJi2tqgk&t=3s)
 * [Data Science Dojo](https://www.youtube.com/watch?v=XQgXKtPSzUI)
 * [Scrapinghub (The creator of Scrapy)](https://learn.scrapinghub.com/scrapy/)
+
+
+Checkout our [GitHub repo](https://github.com/webscrape/) for more codes and tutorials.
