@@ -20,12 +20,12 @@ Python is one of the most popular language used for web scraping. Python is easy
 While lxml is fast, BeautifulSoup is easy to use.
 
 * [Selenium](http://www.seleniumhq.org/): An automation tool for testing web applications which can also be used for web scraping. 
-Selenium is available in other languages like Java, C#, Ruby, etc.
+Selenium is also available in other languages like Java, C#, Ruby, etc.
 
 * [Scrapy](https://scrapy.org/): A robust framwework for scraping data in a manageable and efficient way. 
 Ultimately, scrapy is the one to choose in order to scrape web data in a scalable way. 
 
-Below is a simple [Scrapy](https://scrapy.org/) script, a Python framework used for web scraping.
+Below is a simple Scrapy script, a Python framework used for web scraping.
 
 ```
 import scrapy
