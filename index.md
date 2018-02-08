@@ -1,35 +1,45 @@
 ## Welcome to webscrape
 
-I will teach you how to scrape web properly and efficiently. The language we will be using will be Python.
+This website is dedicated to teach people how to scrape web properly and efficiently. The language we will be using here will be [Python](https://www.python.org/).
 
 ### Web Scraping
 
 Web Scraping is the process of extracting data from the web automatically using some tools or code.
+Python is one of the most popular language used for web scraping. Python is easy to learn and deploy.
+
+
+Below is a simple [Scrapy](https://scrapy.org/) script, a Python framework used for web scraping.
 
 ```markdown
-Syntax highlighted code block
+import scrapy
 
-# Header 1
-## Header 2
-### Header 3
+class ExampleSpider(scrapy.Spider):
+    name = 'example'
+    allowed_domains = ['example.com']
+    start_urls = ['http://www.example.com/']
 
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
+    def parse(self, response):
+        heading = response.css('h1::text').extract_first()
+        text = response.css('p::text').extract_first()
+        yield {
+            'heading': heading,
+            'text': text,
+        }
 ```
 
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
+### Popular Python Frameworks/Libraries for web scraping
 
-### Jekyll Themes
+* [urllib](https://docs.python.org/3/library/urllib.html): Python's native package for playing with url.
 
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/webscrape/webscrape.github.io/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
+* [requests](http://docs.python-requests.org/en/master/): A simple python library that allow us to send HTTP requests.
 
-### Support or Contact
+* [lxml](http://lxml.de/): A fantastic and fast library for parsing XML and HTML documents.
 
-Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+* [BeautifulSoup](https://www.crummy.com/software/BeautifulSoup/): Another great library for parsing XML and HTML documents. 
+While lxml is fast, BeautifulSoup is easy to use.
+
+* [Selenium](http://www.seleniumhq.org/): An automation tool for testing web applications which can also be used for web scraping. 
+Selenium is available in other languages like Java, C#, Ruby, etc.
+
+* [Scrapy](https://scrapy.org/): A robust framwework for scraping data in a manageable and efficient way. 
+Ultimately, scrapy is the one to choose in order to scrape web data in a scalable way. 
