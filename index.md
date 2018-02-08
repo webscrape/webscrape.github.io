@@ -1,6 +1,6 @@
 ## Welcome to webscrape
 
-I will teach yo how to scrape web properly and efficiently. The language we will be using will be Python.
+I will teach you how to scrape web properly and efficiently. The language we will be using will be Python.
 
 ### Web Scraping
 
