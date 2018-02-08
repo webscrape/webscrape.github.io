@@ -1,4 +1,4 @@
-## Welcome to webscrape
+## Welcome to webscrape.github.io
 
 This website is dedicated to teach people how to scrape web properly and efficiently. The language we will be using here will be [Python](https://www.python.org/).
 
@@ -43,3 +43,13 @@ class ExampleSpider(scrapy.Spider):
             'text': text,
         }
 ```
+
+### Useful Links
+
+* [Quora](https://www.quora.com/What-are-some-good-Python-web-scraping-tutorials)
+* [Hackernoon](https://hackernoon.com/web-scraping-tutorial-with-python-tips-and-tricks-db070e70e071)
+* [Dataquest](https://www.dataquest.io/blog/web-scraping-tutorial-python/)
+* [Codementor](https://www.codementor.io/community/topic/web-scraping)
+* [Coding for Entrepreneurs](https://www.youtube.com/watch?v=3xQTJi2tqgk&t=3s)
+* [Data Science Dojo](https://www.youtube.com/watch?v=XQgXKtPSzUI)
+* [Scrapinghub (The creator of Scrapy)](https://learn.scrapinghub.com/scrapy/)
