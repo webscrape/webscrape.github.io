@@ -8,25 +8,6 @@ Web Scraping is the process of extracting data from the web automatically using 
 Python is one of the most popular language used for web scraping. Python is easy to learn and deploy.
 
 
-Below is a simple [Scrapy](https://scrapy.org/) script, a Python framework used for web scraping.
-
-```markdown
-import scrapy
-
-class ExampleSpider(scrapy.Spider):
-    name = 'example'
-    allowed_domains = ['example.com']
-    start_urls = ['http://www.example.com/']
-
-    def parse(self, response):
-        heading = response.css('h1::text').extract_first()
-        text = response.css('p::text').extract_first()
-        yield {
-            'heading': heading,
-            'text': text,
-        }
-```
-
 ### Popular Python Frameworks/Libraries for web scraping
 
 * [urllib](https://docs.python.org/3/library/urllib.html): Python's native package for playing with url.
@@ -43,3 +24,22 @@ Selenium is available in other languages like Java, C#, Ruby, etc.
 
 * [Scrapy](https://scrapy.org/): A robust framwework for scraping data in a manageable and efficient way. 
 Ultimately, scrapy is the one to choose in order to scrape web data in a scalable way. 
+
+Below is a simple [Scrapy](https://scrapy.org/) script, a Python framework used for web scraping.
+
+```
+import scrapy
+
+class ExampleSpider(scrapy.Spider):
+    name = 'example'
+    allowed_domains = ['example.com']
+    start_urls = ['http://www.example.com/']
+
+    def parse(self, response):
+        heading = response.css('h1::text').extract_first()
+        text = response.css('p::text').extract_first()
+        yield {
+            'heading': heading,
+            'text': text,
+        }
+```
